@@ -6,7 +6,7 @@ WORKDIR /build
 
 RUN ./gradlew jar
 
-COPY build/libs/tic-tac-toe-2.0.jar /opt/tic-tac-toe.jar
+COPY build/libs/bouquet-producer-0.1.jar /opt/bouquet-producer.jar
 RUN rm /build -rf
 
-ENTRYPOINT ["java", "-jar", "/opt/tic-tac-toe.jar"]
+ENTRYPOINT ["java", "-jar", "/opt/bouquet-producer.jar"]
